@@ -92,8 +92,8 @@ jobs:
 
         - name: Build Docker image
           run: |
-            docker buildx build -t m4k4rich/time-python-app:latest .
-            docker buildx build --push -t m4k4rich/time-python-app:latest .
+            docker buildx build -t artkochergin/time-python-app:latest .
+            docker buildx build --push -t artkochergin/time-python-app:latest .
           working-directory: ./app_python  # Change to your project directory
 
         - name: Check Docker Hub Login Status
@@ -101,5 +101,3 @@ jobs:
 
         - name: Logout from Docker Hub
           run: docker logout
-
-

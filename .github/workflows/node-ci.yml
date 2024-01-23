@@ -79,6 +79,6 @@ jobs:
 
         - name: Build and push Docker image
           run: |
-            docker buildx build -t m4k4rich/random-node-app:latest .
-            docker buildx build --push -t m4k4rich/random-node-app:latest .
+            docker buildx build -t artkochergin/random-node-app:latest .
+            docker buildx build --push -t artkochergin/random-node-app:latest .
           working-directory: ./app_node # Change to your project directory
